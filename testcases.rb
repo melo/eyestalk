@@ -18,3 +18,25 @@ class ClientToClientPing < TestCase
     playback 'xmpp_ping'
   end
 end
+
+# sends a XEP-0030 disco#info request
+class DiscoRequest < TestCase
+  def call
+    playback 'disco.xml'
+  end
+end
+
+# sends a direct presence
+class DirectPresence < TestCase
+  def call
+    playback 'direct_presence.xml'
+  end
+end
+
+# starts file transfer
+class FileTransfer < TestCase
+  def call
+    playback 'file_transfer.xml'
+  end
+end
+
