@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 
+require 'rubygems'
 require 'xmpp4r'
 
 # wait 10 seconds for a reply
